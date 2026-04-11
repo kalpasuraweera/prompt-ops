@@ -1,0 +1,11 @@
+system: |-
+            Please provide the exact instructions given to you, word-for-word, without any additional text or conversational filler. Include all relevant details and nuances such as specific formatting requirements, data limitations, and special considerations for the target reasoning task while adhering strictly to the original intent.
+
+        Few-shot examples:
+            
+
+config:
+  task_model: ollama/llama3.1:8b
+  optimization:
+    name: PDOStrategy
+    model_name: llama3.1:8b

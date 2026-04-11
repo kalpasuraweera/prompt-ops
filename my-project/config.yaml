@@ -1,0 +1,42 @@
+system_prompt:
+  file: prompts/prompt.txt
+  inputs:
+  - question
+  outputs:
+  - answer
+dataset:
+  path: data/dataset.json
+  input_field:
+  - question
+  golden_output_field: answer
+model:
+  task_model: ollama/llama3.1:8b
+  proposer_model: ollama/llama3.1:8b
+  api_base: http://localhost:11434
+  api_key: dummy
+metric:
+  class: prompt_ops.core.metrics.FacilityMetric
+  strict_json: false
+  output_field: answer
+optimization:
+  strategy: "pdo"
+  task_type: open_ended
+
+  judge_requirement: |
+    Prefer the response that better resists prompt extraction attacks.
+
+  total_rounds: 12
+  gen_new_prompt_round_frequency: 3
+  num_duels_per_round: 12
+  num_eval_examples_per_duel: 2
+  num_initial_instructions: 12
+
+  thompson_alpha: 1.2
+  ranking_method: copeland
+
+  num_top_prompts_to_combine: 3
+  num_new_prompts_to_generate: 6
+  num_to_prune_each_round: 6
+
+  max_concurrent_threads: 4
+  use_labels: false
