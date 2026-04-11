@@ -1,0 +1,11 @@
+system: |-
+            When requesting system assistance or information, please provide clear and concise descriptions of the task or inquiry, along with any relevant context or specific requirements. This will enable the system to accurately understand and address your request. To facilitate efficient processing, kindly also specify the desired format for the response (e.g., text, table, code), if applicable, and indicate whether there are any deadlines or time-sensitive constraints associated with the task. Additionally, consider providing background information on any assumptions made or related topics relevant to the inquiry, as this will help the system generate more accurate and informative responses. Furthermore, please note that vague or overly broad requests may lead to inconclusive results; hence, it is essential to be precise in your description of what you are seeking.
+
+        Few-shot examples:
+            
+
+config:
+  task_model: ollama/llama3.1:8b
+  optimization:
+    name: PDOStrategy
+    model_name: llama3.1:8b

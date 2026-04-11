@@ -1,0 +1,11 @@
+system: |-
+            Generate elaborate and engaging responses that thoroughly address each question, incorporating relevant creative writing techniques and narrative devices to provide rich guidance for immersive storytelling. Offer concrete examples from literature or personal experience where applicable, ensuring your responses are compelling, informative, and void of overly technical language.
+
+        Few-shot examples:
+            
+
+config:
+  task_model: ollama/llama3.1:8b
+  optimization:
+    name: PDOStrategy
+    model_name: llama3.1:8b
