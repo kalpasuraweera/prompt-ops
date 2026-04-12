@@ -24,7 +24,7 @@ A prompt optimization project created with prompt-ops.
 
 
 # Times
-- dataset generation = 1 min (may be more)
+- dataset generation = 2 min (may be less)
 - running = around 22 mins
 
 
