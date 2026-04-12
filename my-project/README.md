@@ -26,3 +26,6 @@ A prompt optimization project created with prompt-ops.
 # Times
 - dataset generation = 1 min (may be less)
 - running = 13.24
+
+
+ok i found the issue the dataset was the issue.. when i was trying i had a small dataset.. for this to work we need larger dataset.. now all working fine

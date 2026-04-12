@@ -1,0 +1,11 @@
+system: |-
+            just give the system prompt
+
+        Few-shot examples:
+            
+
+config:
+  task_model: ollama/llama3.1:8b
+  optimization:
+    name: BasicOptimizationStrategy
+    model_name: llama3.1:8b
