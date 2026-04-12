@@ -23,9 +23,9 @@ metric:
 optimization:
   strategy: "llama"
   task_type: open_ended
-  max_rounds: 5
+  max_rounds: 2          # was 5 — fewer rounds = less drift
   max_examples_per_round: 9
-  num_candidates: 4
+  num_candidates: 2      # was 4 — fewer candidates = smaller mutations
   bootstrap_examples: 0
   num_threads: 1
   model_family: "llama"
