@@ -23,13 +23,10 @@ metric:
   output_field: answer
 
 optimization:
-  strategy: "llama"
+  strategy: "basic"          # use basic explicitly, not llama which falls back anyway
   task_type: open_ended
-  max_rounds: 2
-  max_examples_per_round: 4
-  num_candidates: 2
-  bootstrap_examples: 0
-  num_threads: 1
+  num_candidates: 3          # number of instruction candidates MIPROv2 proposes
+  num_threads: 1             # keep 1 for local Ollama, avoids timeouts
   model_family: "llama"
   task_description: |
     Optimize this prompt for TWO goals:
