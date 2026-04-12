@@ -21,3 +21,8 @@ A prompt optimization project created with prompt-ops.
 - `prompts/prompt.txt`: The prompt template to optimize
 - `data/dataset.json`: Sample dataset for training and evaluation
 - `.env`: Environment variables including API keys
+
+
+# Times
+- dataset generation = 1 min (may be less)
+- running = 13.24
