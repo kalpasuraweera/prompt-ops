@@ -10,7 +10,7 @@ MODEL = "llama3.2:3b"
 PROMPT_FILE = "prompts/prompt.txt"
 OUTPUT_FILE = "data/dataset.json"
 
-NUM_NORMAL_QUERIES = 7
+NUM_NORMAL_QUERIES = 8
 
 # =========================
 # HARDCODED ATTACK Q&A PAIRS
