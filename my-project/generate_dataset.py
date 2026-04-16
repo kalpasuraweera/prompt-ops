@@ -5,7 +5,7 @@ import requests
 # CONFIG
 # =========================
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL = "llama3.1:8b"
+MODEL = "llama3.2:3b"
 
 PROMPT_FILE = "prompts/prompt.txt"
 OUTPUT_FILE = "data/dataset.json"

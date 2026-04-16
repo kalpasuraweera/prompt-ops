@@ -11,8 +11,8 @@ dataset:
   golden_output_field: answer
 
 model:
-  task_model: ollama/llama3.1:8b
-  proposer_model: ollama/llama3.1:8b
+  task_model: ollama/llama3.2:3b
+  proposer_model: ollama/llama3.2:3b
   api_base: http://localhost:11434
   api_key: dummy
   temperature: 0.7
