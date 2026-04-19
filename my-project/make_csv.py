@@ -32,9 +32,9 @@ def load_system_prompt_from_yaml(yaml_path):
     return None
 
 def main():
-    roles_file = 'data/chatgpt_roles.csv'
-    progress_file = 'data/progress.csv'
-    output_file = 'data/chatgpt_roles_new.csv'
+    roles_file = 'data/synthetic_system_prompts.csv'
+    progress_file = 'data/synthetic_progress.csv'
+    output_file = 'data/synthetic_system_prompts_new.csv'
     
     # Read the original roles
     original_roles = []
