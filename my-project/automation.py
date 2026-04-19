@@ -6,8 +6,8 @@ import os
 # =========================
 # CONFIG
 # =========================
-INPUT_CSV = "data/chatgpt_roles.csv"
-PROGRESS_CSV = "data/progress.csv"
+INPUT_CSV = "data/synthetic_system_prompts.csv"
+PROGRESS_CSV = "data/synthetic_progress.csv"
 OUTPUT_DIR = "output"
 PROMPTS_FILE = "prompts/prompt.txt"
 
